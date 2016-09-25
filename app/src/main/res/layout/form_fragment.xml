@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/view_padding"
+    android:paddingTop="@dimen/view_padding">
+
+
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_padding"
+        android:hint="@string/firstName" />
+
+    <EditText
+        android:id="@+id/etlastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_padding"
+        android:hint="@string/lastName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gender"
+        android:textColor="@color/black" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/view_padding"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/view_padding"
+            android:text="@string/male"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/form_save" />
+
+</LinearLayout>
